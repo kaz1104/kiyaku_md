@@ -1,0 +1,261 @@
+// compileCompressed: ../css/$1.css
+
+//Definition
+$base-margin: 10px;
+$black: #333;
+
+
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1,h2,h3,h4,h5,h6,p,
+ul,li,
+table, thead, th, tbody, tr, td,
+input,textarea,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  letter-spacing: .05em;
+  line-height: 1.8;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+
+/*Separation*/
+.row {
+  clear: both;
+  margin-bottom: $base-margin*2;
+  overflow: auto;
+}
+
+.span__inner {
+  padding: 10px; }
+
+.span1 {
+  float: left;
+  width: 8.3333333333%; }
+
+.span2 {
+  float: left;
+  width: 16.6666666666%; }
+
+.span3 {
+  float: left;
+  width: 25%; }
+
+.span4 {
+  float: left;
+  width: 33.3333333333%; }
+
+.span5 {
+  float: left;
+  width: 41.6666666666%; }
+
+.span6 {
+  float: left;
+  width: 50%; }
+
+.span7 {
+  float: left;
+  width: 58.3333333333%; }
+
+.span8 {
+  float: left;
+  width: 66.6666666666%; }
+
+.span9 {
+  float: left;
+  width: 75%; }
+
+.span10 {
+  float: left;
+  width: 83.3333333333%; }
+
+.span11 {
+  float: left;
+  width: 91.66667%; }
+
+.span12 {
+  float: left;
+  width: 100%; }
+
+/*Font Size*/
+.small-font {
+  font-size: 10px;
+  font-size: 1rem;
+}
+.small-font-en {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+.regular-font {
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+.regular-font-en {
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+.medium-font {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+.medium-font-en {
+  font-size: 21px;
+  font-size: 2.1rem;
+}
+
+.semiLarge-font {
+  font-size: 24px;
+  font-size: 2.4rem;
+}
+.semiLarge-font-en {
+  font-size: 30px;
+  font-size: 3rem;
+}
+
+.large-font {
+  font-size: 28px;
+  font-size: 2.8rem;
+}
+.large-font-en {
+  font-size: 39px;
+  font-size: 3.9rem;
+}
+
+.xLarge-font {
+  font-size: 36px;
+  font-size: 3.6rem;
+}
+.xLarge-font-en {
+  font-size: 45px;
+  font-size: 4.5rem;
+}
+
+.xxLarge-font {
+  font-size: 42px;
+  font-size: 4.2rem;
+}
+
+/*Display*/
+.p_1 > .subArticle__num {
+  display: none;
+}
+
+.hidden {
+  display: none; }
+
+.hidden-v {
+  visibility: hidden; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  //min-width: 840px;
+  min-width: 960px; }
+
+
+
+  /*Contents*/
+  .tos {
+    &__title {
+      padding: $base-margin*2 0;
+    }
+    &__headNote {
+      margin-bottom: $base-margin*2;
+    }
+  }
+
+  .section {
+    &__title {
+      margin-bottom: $base-margin*2;
+      border-left: 4px solid #fff160;
+      padding: 0 $base-margin+4px 0 $base-margin;
+    }
+    &__num {
+      margin-right: $base-margin;
+    }
+  }
+
+  .chapter {
+    &__wrapper {
+      margin-bottom: $base-margin*6;
+    }
+  }
+
+
+  .article {
+    &__title {
+      font-weight: bold;
+    }
+    &__wrapper {
+    margin-bottom: $base-margin*2;
+    padding: 0 14px;
+  }
+    &__num {
+    margin-right: $base-margin;
+  }
+    // Table
+    &__table {
+      border: 1px solid #eee;
+      border-collapse: collapse;
+      width: 100%;
+      margin: 10px 0;
+    }
+    &__thead {
+      width: 100%;
+      background-color: #333;
+    }
+    &__th {
+      color: #fff;
+      font-weight: normal;
+      white-space: nowrap;
+      padding: $base-margin*1.5;
+    }
+    &__tr {
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+    &__tr:nth-child(2n) {
+      background-color: #f5f5f5;
+    }
+    &__td {
+      padding: $base-margin*1.5;
+    }
+
+}
+
+  .subArticle {
+    &__num {
+      margin-right: $base-margin;
+    }
+  }
+
+  .subParagraph {
+    &__num {
+      margin-right: $base-margin;
+    }
+  }
