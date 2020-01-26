@@ -1,3 +1,10 @@
+// 余分なStyleの削除
+$("style").remove();
+
+// 余分なID, Classの削除
+$("h1, h2, h3").removeAttr("id");
+$("body").removeClass();
+
 //CSSの挿入
 var $style = "<link rel='stylesheet' href='../css/style.css'>"
 $("head").append($style);
