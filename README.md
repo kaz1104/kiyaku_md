@@ -26,3 +26,9 @@ MarkdownをHTMLに変換したあとに、そのHTMLに
 ```
 
 を入れて、jquery本体とscriptを読ませるようにしてください。(CSSはjsでlinkタグを挿入するようにしています。)
+
+なお、CSSはデフォルトでは
+```
+<link rel='stylesheet' href='../style/style.min.css'>
+```
+で挿入されるようになっているので、これに合わせた形で置くか、場所を帰るのであればjs側の修正をするようにしてください。
