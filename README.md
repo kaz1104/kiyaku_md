@@ -17,10 +17,12 @@ Markdown記法で```[条文の表題]()```としておくと、自動でその�
 ## 使い方
 MarkdownをHTMLに変換したあとに、そのHTMLに
 
-```<script
+```
+<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <script src="[相対パス]/script.js"></script>```
+  <script src="[相対パス]/script.js"></script>
+```
 
 を入れて、jquery本体とscriptを読ませるようにしてください。(CSSはjsでlinkタグを挿入するようにしています。)
