@@ -1,22 +1,26 @@
 // 余分なStyleの削除
 $("style").remove();
+$("link").remove();
 
 // 余分なID, Classの削除
 $("h1, h2, h3").removeAttr("id");
 $("body").removeClass();
 
 //CSSの挿入
-var $style = "<link rel='stylesheet' href='../css/style.css'>"
+var $style = "<link rel='stylesheet' href='../style/style.min.css'>"
 $("head").append($style);
 
+// Body以下をWrap
+$("body").wrapInner('<section class="tos">')
+
 //Head addClass
-$("h1").addClass("tos__title semiLarge-font");
-$("h2").addClass("section__title medium-font");
-$("h3").addClass("article__title regular-font");
+$("h1").addClass("tos__title");
+$("h2").addClass("section__title");
+$("h3").addClass("article__title");
 //$("p").addClass("regular-font");
 
 // Head note
-$("h1 + p").addClass("tos__headNote regular-font");
+$("h1 + p").addClass("tos__headNote");
 
 //Section Number automatic numbering
 $("h2").each(function(i){
@@ -116,12 +120,12 @@ $("a").each(function(i){
 
 // Table
   $("colgroup").remove();
-  $(".article__wrapper > table").addClass("regular-font article__table");
-  $(".article__table thead").addClass("regular-font article__thead");
-  $(".article__table th").addClass("regular-font article__th");
-  $(".article__table tbody").addClass("regular-font article__tbody");
-  $(".article__table tr").addClass("regular-font article__tr");
-  $(".article__table td").addClass("regular-font article__td");
+  $(".article__wrapper > table").addClass("article__table");
+  $(".article__table thead").addClass("article__thead");
+  $(".article__table th").addClass("article__th");
+  $(".article__table tbody").addClass("article__tbody");
+  $(".article__table tr").addClass("article__tr");
+  $(".article__table td").addClass("article__td");
 
 
 
@@ -140,6 +144,6 @@ $(function(){
 });
 
 
-//Memo
-//各条項をSectionで区切っていかないとコントロールができない。
-//親子要素の関係がないため、条項ごとでハンドリングができない。
+// Memo
+// 各条項をSectionで区切っていかないとコントロールができない。
+// 親子要素の関係がないため、条項ごとでハンドリングができない。
