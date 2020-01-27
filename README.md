@@ -12,13 +12,15 @@ Markdownで書いた契約書・利用規約に条文番号を自動で与えた
 - li: 号
 
 ## 参照条文の書き方
-Markdown記法で`[条文の表題]()`としておくと、自動でその条文番号とIDを拾ってきて、リンクを作成します。
+Markdown記法で```[条文の表題]()```としておくと、自動でその条文番号とIDを拾ってきて、リンクを作成します。
 
 ## 使い方
 MarkdownをHTMLに変換したあとに、そのHTMLに
-`<script
+
+```<script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <script src="[相対パス]/script.js"></script>`
+  <script src="[相対パス]/script.js"></script>```
+
 を入れて、jquery本体とscriptを読ませるようにしてください。(CSSはjsでlinkタグを挿入するようにしています。)
